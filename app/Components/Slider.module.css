@@ -1,0 +1,301 @@
+
+/* .blogBox{
+  overflow:hidden;
+  height: 1188px;
+  background: #496AF1;
+  margin-top: 200px;
+  position: relative;
+  } */
+  .mainSlider{
+    margin-top: 200px;
+    height: 1000px;  
+    background: #496AF1;
+  }
+   .sliderContainer {
+  /* position: relative;
+      width: 100%;
+      height: 500px; 
+      overflow: hidden;
+  background: #496AF1; */
+  /* border: 12px solid black; */
+  /* width: 80%; */
+  overflow:hidden;
+  height: 988px;
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: center;
+    }
+
+  .sliderControls {
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .prevButton {
+    cursor: pointer;
+    font-size: 50px;
+    position: relative;
+    right: 900px;
+    bottom: 800px;
+    color: white;
+  }
+  .nextButton{
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+    position: relative;
+    left: 900px;
+    bottom: 800px;
+  }
+  
+  .prevButton:hover,.nextButton:hover {
+    /* text-shadow: 1px 10px  black; */
+    font-weight: bold;
+  }
+  
+  .sliderWrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 441px;
+    height: 544px;
+    border-radius: 14px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px 30px 25px;
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .slideContent {
+    padding: 20px;
+    /* border: 2px solid black; */
+  }
+  
+  .slideTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slideDescription {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media screen and (min-width: 1024px) {
+    .mainSlider{
+      margin-top: 200px;
+      height: 1000px;  
+      background: #496AF1;
+    }
+     .sliderContainer {
+    /* position: relative;
+        width: 100%;
+        height: 500px; 
+        overflow: hidden;
+    background: #496AF1; */
+    /* border: 12px solid black; */
+    /* width: 80%; */
+    overflow:hidden;
+    height: 988px;
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: center;
+      }
+  
+    .sliderControls {
+       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    
+    .prevButton {
+      cursor: pointer;
+      font-size: 50px;
+      position: relative;
+      right: 900px;
+      bottom: 800px;
+      color: white;
+    }
+    .nextButton{
+      color: white;
+      cursor: pointer;
+      font-size: 50px;
+      position: relative;
+      left: 900px;
+      bottom: 800px;
+    }
+    
+    .prevButton:hover,.nextButton:hover {
+      /* text-shadow: 1px 10px  black; */
+      font-weight: bold;
+    }
+    
+    .sliderWrapper {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      /* align-items: center; */
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      width: 441px;
+      height: 544px;
+      border-radius: 14px;
+      background: #FFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px 30px 25px;
+    }
+    
+    .slideImage {
+      width: 100%;
+      height: 300px; 
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    .slideContent {
+      padding: 20px;
+      /* border: 2px solid black; */
+    }
+    
+    .slideTitle {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .slideDescription {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+        
+  }
+  
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+                     
+    }
+    
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) 
+  and (orientation: portrait) {
+    .mainSlider{
+      margin-top: 50px;
+      height: 400px;  
+      background: #496AF1;
+    }
+     .sliderContainer {
+    overflow:hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+      }
+  
+    .sliderControls {
+       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    
+    .prevButton {
+      cursor: pointer;
+      font-size: 40px;
+      position: relative;
+      right: 180px;
+      bottom: 550px;
+      color: white;
+    }
+    .nextButton{
+      color: white;
+      cursor: pointer;
+      font-size: 40px;
+      position: relative;
+      left: 175px;
+      bottom: 550px;
+    }
+    
+    .sliderWrapper {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      width: 98px;
+      height: 161px;
+      border-radius: 3px;
+      background: #FFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 3px 3px 3px;
+    }
+    
+    .slideImage {
+      min-width: 92px;
+      height: 47px; 
+      /* margin-top: 10px; */
+      object-fit: fill;
+      border-radius: 2px;
+    }
+    
+    .slideContent {
+      padding: 2px;
+      /* border: 2px solid black; */
+    }
+    
+    .slideTitle {
+      font-size: 8px;
+      font-weight: bold;
+      margin-bottom: 1px;
+    }
+    
+    .slideDescription {
+      font-size: 8px;
+      height: 30px;
+      margin-bottom: 1px;
+      
+    }
+    .BlogRead{
+      font-size: 8px;
+font-weight: 700;
+position: relative;
+/* bottom: 1px; */
+color: #496AF1;
+top: 10px;
+    }  
+  }
