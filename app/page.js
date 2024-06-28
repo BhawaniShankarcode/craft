@@ -185,7 +185,7 @@ export default function Home() {
             </div>
 
              <div className="blackCraft">
-              <p className="lg:text-[80px] text-[20px] text-white m-auto mt-10 text-center lg:w-[auto] w-[281px]">What Craftly can do for you ?</p>
+              <p className=" lg:text-[80px] text-[20px] text-white m-auto md:mt-40 mt-10 text-center lg:w-[auto] w-[281px]">What Craftly can do for you ?</p>
               <p className="lg:text-[22px] text-[10px] text-white text-center lg:w-[731px] w-[266px] m-auto">No matter your role or level of design skills, we’ve here to make your worklife easier with our all-in-one solution.</p>
               <div className="blackCraftImg">
                <div className="rectDiv1">
@@ -363,7 +363,7 @@ export default function Home() {
       <Image src={post5} className="post5"/> 
       <Image src={post6} className="post6"/> 
       <Image src={post7} className="post7"/> 
-      <Image src={post8}  className="post8 lg:relative lg:top-7"/> 
+      <Image src={post8}  className="post8 lg:relative lg:top-7 "/> 
      </div>   
      <div className="usgBlackImg3">
       {/* <Image src={post1} className="post9"/> */}
@@ -430,38 +430,6 @@ export default function Home() {
 <div className="threeContainer">
 
 <Slider/>
-
-{/* <div className="blogBox">
-  <div className="BlogCraft">
-  <p className="BlgCrfPara text-center lg:text-[80px] text-[20px] font-bold text-white lg:p-32">Blogs by Craftly <Image src={frame5} alt="frame5" className="inline w-[28px] h-[28px] "/> </p>
-  
-  </div>
-  <div className="Blogs">
-    <Image src={blogbtn1} alt="previous" className="lg:h-[55px] lg:w-[55px] h-[10px] w-[10px]"/>
-    <div className="Blog">
-      <Image src={blog1} alt="Blog" className="cardsImg"/>
-      <p className="blogHead">Allow your customers to create visuals from a Form</p>
-      <p className="blogPara">Learn step by step how to empower your customers with image generation.</p>
-       <Link href="/" className="BlogRead">READ MORE <Image src={arrow2} alt="Arrow" className="arrow2 inline ml-8"/></Link>
-    </div>
-    <div className="Blog">
-      <Image src={blog2} alt="Blog" className="cardsImg"/>
-      <p className="blogHead">Allow your customers to create visuals from a Form</p>
-      <p className="blogPara">Learn step by step how to empower your customers with image generation.</p>
-      <Link href="/" className="BlogRead">READ MORE<Image src={arrow2} alt="Arrow" className="arrow2 inline ml-8"/></Link>
-    </div>
-    <div className="Blog">
-      <Image src={blog3} alt="Blog" className="cardsImg"/>
-      <p className="blogHead">Allow your customers to create visuals from a Form</p>
-      <p className="blogPara">Learn step by step how to empower your customers with image generation.</p>
-      <Link href="/" className="BlogRead">READ MORE <Image src={arrow2} alt="Arrow" className="arrow2 inline ml-8"/></Link>
-    </div>
-    <Image src={blogbtn2} alt="Next" className="lg:h-[55px] lg:w-[55px] h-[10px] w-[10px]"/>
-  </div>
-</div> */}
-
-
-
 <div className="yellowCraft2">
   <div className="yellowCraftContent">
 <p className="yccPara">Slow asset production is killing your growth Unlock your  true potential now *</p>
@@ -547,23 +515,6 @@ export default function Home() {
            </div>
         </div>
         </div>
-
-
-{
-   data.map((d)=>{
-    <div>
-        <div>
-            {/* <Image src={d.img} alt="jf"/>  */}
-        </div>
-        <div>
-            <p className="text-2xl">{d.title}</p>
-            <p>{d.desription}</p>
-        </div>
-    </div>
-})}
-
-
-
 
     </>
   );
