@@ -32,59 +32,23 @@ const Slider = () => {
       title: "Allow your customers to create visuals from a Form",
       description:
         "Learn step by step how to empower your customers with image generation.",
-      buttonText: "Read More",
-      buttonLink: "/slide1",
     },
     {
       image: "/Blog2.png",
       title: "Allow your customers to create visuals from a Form",
       description:
         "Learn step by step how to empower your customers with image generation.",
-      buttonText: "Read More",
-      buttonLink: "/slide2",
     },
     {
       image: "/Blog3.png",
       title: "Allow your customers to create visuals from a Form",
       description:
         "Learn step by step how to empower your customers with image generation.",
-      buttonText: "Read More",
-      buttonLink: "/slide3",
     },
   ];
 
   return (
     <>
-            {/* <div className="blogBox">
-  <div className="BlogCraft">
-  </div>
-  <div className="Blogs">
-    <Image src="/blogbtn1.png" alt="previous" className="lg:h-[55px] lg:w-[55px] h-[10px] w-[10px]" fill/>
-    <div className="Blog">
-    <Image src={slides[0].image} fill alt="Blog" className="cardsImg"/>
-      <p className="blogHead">{slides[0].title}</p>
-      <p className="blogPara">{slides[0].description}</p>
-       <Link href="/" className="BlogRead">READ MORE <Image src="/arrow2.png" fill alt="Arrow" className="arrow2 inline ml-8"/></Link>
-    </div>
-    <div className="Blog">
-      <Image src={slides[1].image} fill alt="Blog" className="cardsImg"/>
-      <p className="blogHead">Allow your customers to create visuals from a Form</p>
-      <p className="blogPara">Learn step by step how to empower your customers with image generation.</p>
-      <Link href="/" className="BlogRead">READ MORE<Image src="/arrow2.png" fill alt="Arrow" className="arrow2 inline ml-8"/></Link>
-    </div>
-    <div className="Blog">
-    <Image src={slides[2].image} alt="Blog" className="cardsImg" fill/>
-      <p className="blogHead">{slides[2].title}</p>
-      <p className="blogPara">{slides[2].description}</p>
-      <Link href="/" className="BlogRead">READ MORE <Image src="/arrow2.png" alt="Arrow" className="arrow2 inline ml-8" fill/></Link>
-      </div>
-    <Image src="/blogbtn2.png" fill alt="Next" className="lg:h-[55px] lg:w-[55px] h-[10px] w-[10px]"/>
-    </div>
-    </div> */}
-    
-
-
-
 
 <div className={styles.mainSlider}>
     <p className="lg:pt-auto pt-7 text-center lg:text-[80px] text-[20px] font-bold text-white lg:p-16">Blogs by Craftly <Image src="/frame5.png" alt="frame5" className="inline md:w-[80px] md:h-[80px] w-9 h-9" height={200} width={200}/> </p>
@@ -104,13 +68,8 @@ const Slider = () => {
             <div className={styles.slideContent}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
               <p className={styles.slideDescription}>{slide.description}</p>
-              {/* <a
-                href={slide.buttonLink}
-                className={styles.slideButton}
-              >
-                {slide.buttonText}
-              </a> */}
-              <Link href="/" className={`${styles.BlogRead}`}>READ MORE <Image src="/arrow2.png" alt="Arrow" className={`arrows2 arrow2 inline md:ml-20 ml-4`} height={20} width={20} /></Link>
+            
+              <Link href="/" className={`${styles.BlogRead}`}>READ MORE <Image src="/arrow2.png" alt="Arrow" className={`${styles.arrows2} inline md:ml-20 ml-4`} height={10} width={10} /></Link>
             </div>
           </div>
         ))}
